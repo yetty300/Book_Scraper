@@ -1,7 +1,5 @@
-import os
 import requests
 from bs4 import BeautifulSoup
-import re
 import csv
 
 # Get main page URL that will be used to create html to work off of
@@ -36,8 +34,8 @@ soup = BeautifulSoup(category_info.content, 'html.parser')
 books = soup.find_all('h3')
 books_data_pre = []
 for book in books:
-    book_url = book.find('a')['href'][9:] #problem is .../.../ so cut off leading 9 elements
-    book_info = requests.get('http://books.toscrape.com/catalogue/' + book_url) #instead of page_url + book_url
+    book_url = book.find('a')['href'][9:]
+    book_info = requests.get('http://books.toscrape.com/catalogue/' + book_url)
     book_soup = BeautifulSoup(book_info.content, 'html.parser')
     upc = book_soup.find('table', class_="table table-striped").find_all('td')[0].text.strip()
     title = book_soup.find('h1').text
@@ -56,8 +54,7 @@ for book in books:
 #Creates list for data on all books on all pages
 books_data = []
 
-#categories = soup.find('ul', class_="nav nav-list").find('li').find('ul').find_all('a')
-categories = soup.find('div', class_="side_categories").find_all('li')#soup.find('ul', class_="nav nav-list").find_all('li')
+categories = soup.find('div', class_="side_categories").find_all('li')
 
 for cat in categories[1:]:
     category_url = cat.find('a')['href']
@@ -68,13 +65,13 @@ for cat in categories[1:]:
     # This creates a for loop that gets info from each book on page
     for book in books:
         book_url = book.find('a')['href'][9:]
-        book_info = requests.get('http://books.toscrape.com/catalogue/' + book_url) #this needs fixing
+        book_info = requests.get('http://books.toscrape.com/catalogue/' + book_url)
         book_soup = BeautifulSoup(book_info.content, 'html.parser')
 
         upc = book_soup.find('table', class_="table table-striped").find_all('td')[0].text.strip()
         title = book_soup.find('h1').text
-        priceWithTax = book_soup.find('table', class_="table table-striped").find_all('td')[2].text.strip()#.replace('£', '')
-        priceNoTax = book_soup.find('table', class_="table table-striped").find_all('td')[3].text.strip()#.replace('£', '')
+        priceWithTax = book_soup.find('table', class_="table table-striped").find_all('td')[2].text.strip()
+        priceNoTax = book_soup.find('table', class_="table table-striped").find_all('td')[3].text.strip()
         category = book_soup.find('ul', class_="breadcrumb").find_all('a')[2].text.strip()
         rating = book_soup.find('p', class_="star-rating")['class'][1]
         availability = book_soup.find('p', class_="instock availability").text.strip()
