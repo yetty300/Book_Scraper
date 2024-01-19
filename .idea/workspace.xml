@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42cd633-4ecf-436a-8fc6-aa2d76dc0ee6" name="Changes" comment="Rewrote code for a cleaner more streamlined look and added code for one page of content and code fo all pages of content">
+    <list default="true" id="e42cd633-4ecf-436a-8fc6-aa2d76dc0ee6" name="Changes" comment="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705462857537</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category">
+      <option name="closed" value="true" />
+      <created>1705652056304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705652056304</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added HTML parser, title and UPC" />
     <MESSAGE value="Rewrote code for a cleaner more streamlined look and added code for one page of content and code fo all pages of content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewrote code for a cleaner more streamlined look and added code for one page of content and code fo all pages of content" />
+    <MESSAGE value="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category" />
   </component>
 </project>
