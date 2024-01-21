@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42cd633-4ecf-436a-8fc6-aa2d76dc0ee6" name="Changes" comment="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category">
+    <list default="true" id="e42cd633-4ecf-436a-8fc6-aa2d76dc0ee6" name="Changes" comment="Removed Test Comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "yetty300"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fbf85a23-e8a0-4405-914c-58f73e76e307" />
+        <option name="url" value="https://github.com/yetty300/Book_Scraper.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -104,15 +119,68 @@
       <option name="project" value="LOCAL" />
       <updated>1705652056304</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed Test Comments">
+      <option name="closed" value="true" />
+      <created>1705653930709</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705653930709</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Removed Test Comments">
+      <option name="closed" value="true" />
+      <created>1705654170432</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705654170432</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -122,6 +190,7 @@
     <MESSAGE value="Added HTML parser, title and UPC" />
     <MESSAGE value="Rewrote code for a cleaner more streamlined look and added code for one page of content and code fo all pages of content" />
     <MESSAGE value="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category" />
+    <MESSAGE value="Removed Test Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed Test Comments" />
   </component>
 </project>
