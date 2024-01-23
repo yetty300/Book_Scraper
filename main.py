@@ -91,7 +91,7 @@ for cat in categories[1:]:
 
         upc = book_soup.find('table', class_="table table-striped").find_all('td')[0].text.strip()
         title = book_soup.find('h1').text
-        valid_title = re.sub(r'[\/:*?"<>|]', '', title)
+        safe_title = "".join([c for c in title if c.isalpha() or c.isdigit() or c == ' ']).rstrip()
         priceWithTax = book_soup.find('table', class_="table table-striped").find_all('td')[2].text.strip()
         priceNoTax = book_soup.find('table', class_="table table-striped").find_all('td')[3].text.strip()
         category = book_soup.find('ul', class_="breadcrumb").find_all('a')[2].text.strip()
@@ -102,10 +102,10 @@ for cat in categories[1:]:
         image_url = urljoin(book_url_final, image['src'])
         img_response = requests.get(image_url)
 
-        books_data.append([book_url_final, upc, title, priceWithTax, priceNoTax, availability, description, category,
+        books_data.append([book_url_final, upc, safe_title, priceWithTax, priceNoTax, availability, description, category,
                            rating, image_url])
 
-        with open(f'book images/{valid_title}.jpg', 'wb') as img_file:
+        with open(f'book images/{safe_title}.jpg', 'wb') as img_file:
             img_file.write(img_response.content)
         # Create header list
         headers = ["product_page_url", "universal_ product_code (upc)", "book_title",

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42cd633-4ecf-436a-8fc6-aa2d76dc0ee6" name="Changes" comment="Removed Test Comments">
+    <list default="true" id="e42cd633-4ecf-436a-8fc6-aa2d76dc0ee6" name="Changes" comment="Added functionality to retrieve and store book images. Changed the soup code in previous sections so they didn't interfere with future sections. Changed the urls code to more accurately reflect the total url for those sections.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -16,12 +16,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "yetty300"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yetty300&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -135,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705654170432</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added functionality to retrieve and store book images. Changed the soup code in previous sections so they didn't interfere with future sections. Changed the urls code to more accurately reflect the total url for those sections.">
+      <option name="closed" value="true" />
+      <created>1705819157613</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705819157613</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +199,7 @@
     <MESSAGE value="Rewrote code for a cleaner more streamlined look and added code for one page of content and code fo all pages of content" />
     <MESSAGE value="Revamped the Code again to be based off categories and changed the CSV section to print out CSV files per category" />
     <MESSAGE value="Removed Test Comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Test Comments" />
+    <MESSAGE value="Added functionality to retrieve and store book images. Changed the soup code in previous sections so they didn't interfere with future sections. Changed the urls code to more accurately reflect the total url for those sections." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to retrieve and store book images. Changed the soup code in previous sections so they didn't interfere with future sections. Changed the urls code to more accurately reflect the total url for those sections." />
   </component>
 </project>
